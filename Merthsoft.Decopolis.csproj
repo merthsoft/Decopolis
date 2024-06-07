@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+	<LangVersion>latest</LangVersion>
+
+    <Title>Decopolis</Title>
+    <Product>Decopolis</Product>
+    <Copyright>Copyright © 2024</Copyright>
+
+    <!-- Invariant mode saves tens of megabytes for self-contained deployment -->
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="MySqlConnector" Version="2.2.6" />
+    <PackageReference Include="smartirc4net" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Merthsoft.DynamicConfig\**\*" />
+    <ProjectReference Include="Merthsoft.DynamicConfig\Merthsoft.DynamicConfig\Merthsoft.DynamicConfig.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Decopolis.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

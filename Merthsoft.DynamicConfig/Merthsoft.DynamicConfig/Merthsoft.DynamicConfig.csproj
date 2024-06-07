@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Product>Merthsoft.DynamicConfig</Product>
+    <AssemblyTitle>Merthsoft.DynamicConfig</AssemblyTitle>
+    <Copyright>Copyright ©  2012</Copyright>
+  </PropertyGroup>
+
+</Project>
