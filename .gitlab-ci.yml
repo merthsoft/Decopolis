@@ -1,10 +1,10 @@
 build:
-  image: mcr.microsoft.com/dotnet/sdk:5.0
+  image: mcr.microsoft.com/dotnet/sdk:8.0
   script:
-    - dotnet publish -c Release Merthsoft.DecBot3.csproj
+    - dotnet publish -c Release Merthsoft.Decopolis.csproj
   artifacts:
     paths:
-      - bin/Release/net5.0/publish/
+      - bin/Release/net8.0/publish/
 
 docker:
   stage: deploy

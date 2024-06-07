@@ -17,9 +17,7 @@ namespace Merthsoft.DecBot3
 		private static bool QuitFlag = false;
 
 		private static IrcClient irc;
-
-		private static DisposableConnection Connection { get; set; }
-		
+				
 		private static Dictionary<string, Action<string[]>> ConsoleCommandProcessors;
 
 		private static TextWriter logWriter;
