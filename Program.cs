@@ -32,7 +32,7 @@ namespace Merthsoft.DecBot3
 			[Option(shortName: 'l', longName: "logfile", Required = false, HelpText = "Name of a file to log to, or stderr by default", Default = null)]
 			public string LogPath { get; set; }
 
-			[Value(index: 0, Default = "decopolis.ini", HelpText = "Path to the configuration file to use")]
+			[Value(index: 0, Default = "Decopolis.ini", HelpText = "Path to the configuration file to use")]
 			public string ConfigFile { get; set; }
 		}
 
